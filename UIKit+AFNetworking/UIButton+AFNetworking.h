@@ -80,10 +80,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setImageForState:(UIControlState)state
                  withURL:(NSURL *)url;
 
-/**
- Asynchronously downloads an image from the specified URL, and sets it as the image for the specified state once the request is finished. Any previous image request for the receiver will be cancelled.
-
- If the image is cached locally, the image is set immediately, otherwise the specified placeholder image will be set immediately, and then the remote image will be set once the request is finished.
+ remote image will be set once the request is finished.
 
  @param state The control state.
  @param url The URL used for the image request.
